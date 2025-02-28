@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>About | YouTube Thumbnail Downloader</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+    <meta name='robots' content='index, follow' /> 
+    <meta name='author' content='Dhiraj' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
+    <meta name='description' content='' />
+
+    <meta property='og:url' content='https://youtubethumbnaildownload.github.io' />
+    <meta property='og:title' content='About | YouTube Thumbnail Downloader' />
+    <meta property='og:description' content='' />
+    <link rel='canonical' href='https://youtubethumbnaildownload.github.io/about' />
+    <link rel='icon' type='image/x-icon' href='/images/favicon.png' />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+    <style>
+        #nav a img{
+            display:inline-block;
+            width:58% !important;
+        }
+    </style>
+
+</head>
+
+<body oncontextmenu="return false">
+    <nav class="navbar container-fluid site-gradient text-center" id="nav">
+        <a class="navbar-brand mx-auto" href="/"><img alt="Brand" src="/images/navicon.png" ></a>
+        
+        <a style="outline:none;" id="header-links" href="/"></a>
+    </nav>
+
+    <div class="container" id="about">
+        <h1>About us</h1>
+        <p>Users can find their best YouTube thumbnail download solution at Our website youtubethumbnaildownload.github.io where business and personal thumbnail acquisition happens seamlessly and swiftly. Through our platform any user can conveniently obtain stunning images that come in HD, Full HD and 4K resolution formats.</p>
+        <hr>
+        <strong>
+            <p> Who We Are</p>
+        </strong>
+        <p>We at youtubethumbnaildownload.github.io focus on delivering a basic yet strong tool that enables our users to download YouTube thumbnails for different applications. Our mission involves delivering top-quality digital visuals to users through an easy-to-use service.
+        </p>
+        <hr>
+        <strong>
+            <p> What We Offer</p>
+        </strong>
+        <ul>
+            <li>Fast & Easy YouTube Thumbnail Downloader – Get thumbnails in HD, 1080p, or 4K instantly.</li>
+            <li>The interface requires no complicated steps because users need only to enter video links followed by a simple download process.</li>
+            <li>The tool delivers free thumbnails without requiring payments since it maintains a completely free platform.</li>
+            <li>The service maintains full privacy protection by preserving user data confidentiality during every download process.</li>
+        </ul>
+        <hr>
+        <strong>
+            <p> Why Choose Us?</p>
+        </strong>
+        <ul>
+            <li>Lightning-Fast Downloads – No waiting, no lag, just instant results.</li>
+            <li>SEO-Optimized Thumbnails – Customize images for better ranking and uniqueness.</li>
+            <li>Supports All Devices – Works smoothly on mobile, tablet, and desktop.</li>
+        </ul>
+        <hr>
+        <strong>
+            <p>Our Mission</p>
+        </strong>
+        <p>We focus on making thumbnail downloading easier for creators designers and digital marketers to obtain unrestricted high-quality images. Through our services we seek to provide users with seamless efficient image creation capabilities</p><br>
+        <hr>
+        <br>
+        <div class="links">
+            <a href="#" target="_blank">Home</a>
+            <a href="/about" target="_blank">About us</a>
+            <a href="mailto:contactmu97@gmail.com?subject=Youtube Thumnail Download">Contact us</a>
+            <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+            <a href="https://doodlecricket.org" target="_blank">Doodle Cricket</a>
+        </div>
+    </div>
+    
+    <footer id="footer" class="site-gradient container-fluid text-center">
+        <div id="social-media">
+            <a href="https://www.facebook.com/" target="_blank" id="social-media-icons"><img id="social" src="/images/svg/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank" id="social-media-icons"><img id="social" src="/images/svg/twitter.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank" id="social-media-icons"><img id="social" src="/images/svg/instagram.svg" alt="Instagram"></a><br>
+            <span id="copyright">Made with <i class="heart"><i class="fa fa-heart fa-4x fa-beat"></i></i> by 
+            <a href="https://youtubethumbnaildownload.github.io" target="_blank" id="copyrightlink">Youtube Thumbnail Download </a>
+            
+            </span>
+            
+        </div>
+    </footer>
+
+    <script src="js/jquery3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+        
+    <script type="text/javascript">
+        // Replace source
+        $('img').error(function () {
+            $(this).attr('src', '#.png');
+        });
+
+        // Or, hide them
+        $("img").error(function () {
+             $(this).hide();
+        });
+    </script>
+    <script>
+        $('#ytlink').keydown(function (e) {
+            var keyCode = (e.keyCode ? e.keyCode : e.which);
+            if (keyCode == 13) {
+                $('#thumbdloadbtn').trigger('click');
+            }
+        });
+    </script>
+    <script>
+        $("#preview div").hide();
+        $("#preview");
+    </script>
+    <script>
+        var realImage = document.getElementById('thumbnailpreview');
+        var loadingImage = document.getElementById('loadingImage');
+        loadingImage.style.display = 'inline';
+        realImage.style.display = 'none';
+
+        // Create new image
+        var imgPreloader = new Image();
+        // define onload (= image loaded)
+        imgPreloader.onload = function () {
+            realImage.src = imgPreloader.src;
+            realImage.style.display = 'inline';
+            loadingImage.style.display = 'none';
+        };
+        // set image source
+        imgPreloader.src = '/images/placeholder.jpg';
+    </script>
+</body>
+
+</html>
